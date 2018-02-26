@@ -12,7 +12,7 @@ buildscript {
 import org.apache.tools.ant.filters.*
 import de.undercouch.gradle.tasks.download.Download
 
-version '0.0.1'
+version '1.0.0'
 
 project.ext{
 	title = "MultiVCFAnalyzer2"
@@ -90,14 +90,14 @@ processResources {
 } 
 
 clean.doFirst {
-	delete "${rootDir}/precompiledJar/"
+	delete "${rootDir}/Releases/"
 }
 
 task copyJarToBin(type: Copy) {
-	mkdir 'precompiledJar'
+	mkdir 'Releases'
 	def jarName = "build/libs/" + title + "-" + version + ".jar"
     from jarName
-    into "precompiledJar"
+    into "Releases"
 }
 
 build.finalizedBy(copyJarToBin)
