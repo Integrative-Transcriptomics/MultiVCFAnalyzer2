@@ -5,9 +5,10 @@ calculate SNP, gene, and whole genome alignments, together with other relevant s
 ## Dependencies:
 
 - jdk7+
+- gradle
 
 ## generating the jar file
-A precombiled jar can be found in the folder "precombiledJar"
+A precombiled jar can be found in the folder "Releases"
 This program can be built with gradle (https://gradle.org). for that just type
 
 `gradle build`
