@@ -1,3 +1,5 @@
+# DEPRECATED - MultiVCFAnalyzer is no longer supported. The successor is [MUSIAL](https://github.com/Integrative-Transcriptomics/MUSIAL)
+
 # MultiVCFAnalyzer2
 
 calculate SNP, gene, and whole genome alignments, together with other relevant statistics based on vcf files.
